@@ -6,6 +6,46 @@
     <title></title>
 </head>
 <body>
+    <h1>ARC</h1> <h2>EN</h2> <h3>CIEL</h3>
 
+    <script>
+
+        var pElt = document.querySelector("h1", "h2", "h3");
+        pElt.style.margin = "50px";
+        pElt.style.fontFamily = "Arial";
+        pElt.style.backgroundColor = "black";
+        
+        var pElt = document.querySelector("h1");
+        pElt.style.color = "blue";
+        pElt.style.margin = "50px";
+        pElt.style.fontFamily = "Arial";
+        pElt.style.backgroundColor = "black";
+        pElt.style.fontSize = "100px";
+        //pElt.style.backgroundSize = "500px";
+
+        var pElt = document.querySelector("h2");
+        pElt.style.color = "white";
+        pElt.style.margin = "50px";
+        pElt.style.fontFamily = "Arial";
+        pElt.style.backgroundColor = "black";
+        pElt.style.fontSize = "100px";
+
+        var pElt = document.querySelector("h3");
+        pElt.style.color = "red";
+        pElt.style.margin = "50px";
+        pElt.style.fontFamily = "Arial";
+        pElt.style.backgroundColor = "black";
+        pElt.style.fontSize = "100px";
+
+        //Ajout d’un gestionnaire d’événement	
+var boutonElt = document.getElementById("bouton");
+// Ajout d'un gestionnaire pour l'événement click
+boutonElt.addEventListener("click", function () {
+    console.log("clic");
+});
+
+
+
+    </script>
 </body>
 </html>
