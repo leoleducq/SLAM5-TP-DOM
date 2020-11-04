@@ -4,46 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script>
-        var h = document.head; // La variable h contient l'objet head du DOM
-console.log(h);
 
-var b = document.body; // La variable b contient l'objet body du DOM
-console.log(b);
-
-        // Accès au premier enfant du noeud body
-console.log(document.body.childNodes[0]);
-// Accès au deuxième enfant du noeud body
-console.log(document.body.childNodes[1]);
-// Accès au deuxième enfant du deuxième enfant du noeud body
-console.log(document.body.childNodes[1].childNodes[1]);
-// Affiche les noeuds enfant du noeud body
-for (var i = 0; i < document.body.childNodes.length; i++) {
-    console.log(document.body.childNodes[i]);
-}
-
-        // Sélection d’éléments selon la balise
-var titresElts = document.getElementsByTagName("h2"); // Tous les titres h1
-console.log(titresElts[0]); // Affiche le premier titre h1
-console.log(titresElts.length);
-
-        // Sélection d’élément selon leur classe 
-// Tous les éléments ayant la classe "pointsClasse"
-var pointsClasseElts = document.getElementsByClassName("pointsClasse");
-for (var i = 0; i < pointsClasseElts.length; i++) {
-    console.log(pointsClasseElts[i]);
-
-    // Sélection d’élément selon leur identifiant	
-// Elément portant l'identifiant "pointsId"
-console.log(document.getElementById("pointsId"));
-
-    // Le contenu HTML de l'élément identifié par "contenu"
-console.log(document.getElementById("contenu").innerHTML);
-
-// Le contenu textuel de l'élément identifié par "contenu"
-console.log(document.getElementById("contenu").textContent);
-
-    </script>
 </head>
 <body>
     <h1>Titre de ma page</h1>
@@ -58,6 +19,16 @@ console.log(document.getElementById("contenu").textContent);
         </ul>
     </div>
     <button id="bouton">Cliquez-moi !</button>
+
+    <script>
+
+        var pElt = document.querySelector("p");
+        pElt.style.color = "red";
+        pElt.style.margin = "50px";
+        pElt.style.fontFamily = "Arial";
+        pElt.style.backgroundColor = "black";
+
+    </script>
 
 </body>
 </html>
