@@ -11,6 +11,17 @@ console.log(h);
 var b = document.body; // La variable b contient l'objet body du DOM
 console.log(b);
 
+        // Accès au premier enfant du noeud body
+console.log(document.body.childNodes[0]);
+// Accès au deuxième enfant du noeud body
+console.log(document.body.childNodes[1]);
+// Accès au deuxième enfant du deuxième enfant du noeud body
+console.log(document.body.childNodes[1].childNodes[1]);
+// Affiche les noeuds enfant du noeud body
+for (var i = 0; i < document.body.childNodes.length; i++) {
+    console.log(document.body.childNodes[i]);
+}
+
     </script>
 </head>
 <body>
